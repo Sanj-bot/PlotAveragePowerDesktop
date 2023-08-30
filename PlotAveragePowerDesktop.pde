@@ -26,8 +26,8 @@ void draw()
     float pow = player.getAveragePower();
     float x=random(1,100);
     println(pow);
-    fill(255*pow,255*pow,255*pow );
-    rect(50,50, pow * width, height*pow);
+    fill(0,255*pow,0 );
+    rect(0,0,width, height*pow);
   }
 }
 
@@ -35,7 +35,7 @@ void draw()
 // from a finger tap
 void mousePressed(){
   playit = !playit;
-  
+
   if (playit){
     player.play();
   }
